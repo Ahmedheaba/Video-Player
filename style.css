@@ -11,6 +11,10 @@ body{
     z-index: 10;
     overflow: hidden;
 }
+#myVideo{
+    width: inherit;
+    height: inherit;
+}
 #controls{
     height: 40px;
     width: 95%;
