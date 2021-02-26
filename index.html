@@ -1,29 +1,48 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <title>Video Player</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="all.min.js"></script>
+    <link href="all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="frame"></div>
     <div id="main">
-        <div id="videoPanel">
-            <video height="400" width="625" src="Hamza Namira - Fady Shewaya - حمزة نمرة - فاضي شوية - YouTube.mkv" id="myVideo"></video>
-        </div>
+        <video onclick="toggle()" src="Hamza Namira - Fady Shewaya - حمزة نمرة - فاضي شوية - YouTube.mkv" id="myVideo"></video>
+
         <div id="controls">
             <div id="bar">
                 <div id="fill"></div>
             </div>
             <table>
                 <tr>
-                    <td width="55%">
+                    <td width="30%">
                         <div id="currentTime">00:00 / 00:00</div>
                     </td>
-                    <td width="30%">
+                    <td width="10%">
                         <img src="Play.png" alt="playImage" onclick="playOrPause()" id="playButton">
+                    </td>
+                    <td width="10%">
+                        <i style="color: #DBA74A; cursor: pointer;" class="fas fa-stop" onclick="stop()" id="stopButton"></i> 
+                    </td>
+                    <td width="10%">
+                        <i style="color: #DBA74A; cursor: pointer" class="fas fa-backward" onclick="backWord()"></i> 
+                    </td>
+                    <td width="10%">
+                        <i style="color: #DBA74A;  cursor: pointer" class="fas fa-forward" onclick="forwardMove()"></i> 
+                    </td>
+                    <td width="10%">
+                        <select id="videoSpeed" onchange="videoSpeedChanged()" style="background: #DBA74A; cursor: pointer">
+                            <option value="1">1</option>
+                            <option value="2">2x</option>
+                            <option value="3">3x</option>
+                            <option value="4">4x</option>
+                        </select> 
+                    </td>
+                    <td width="10%">
+                        <i style="color: #DBA74A; cursor: pointer" class="fas fa-expand" onclick="fullScreen()"></i> 
                     </td>
                     <td>
                         <img src="Speaker.png" alt="imageSpeaker" id="speaker">

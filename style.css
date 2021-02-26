@@ -3,32 +3,13 @@ body{
     padding: 0;
     background-color: #334621;
 }
-#frame{
-    height: 400px;
-    width: 650px;
-    background-image: url(Frame.png);
-    background-size: 100% 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
-}
 #main{
-    width: 602px;
-    height: 350px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
     overflow: hidden;
-}
-#videoPanel{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 #controls{
     height: 40px;
@@ -45,7 +26,7 @@ body{
 }
 #bar{
     width: 100%;
-    height: 10px;
+    height: 3px;
     background-color: gray;
     display: flex;
     position: absolute;
@@ -53,7 +34,7 @@ body{
     left: 0;
 }
 #fill{
-    height: 10px;
+    height: 3px;
     background-color: red;
 }
 #currentTime{
@@ -79,3 +60,4 @@ input[type=range]::-webkit-slider-thumb{
     border-radius: 15%;
     cursor: pointer;
 }
+.fas{background-color: blue;}
